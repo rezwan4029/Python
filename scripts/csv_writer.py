@@ -35,7 +35,7 @@ class UnicodeWriter:
 
 
 file_location = tempfile.mkdtemp() + '/report.csv'
-print "File create in location =>" + file_location
+print ("File create in location =>" + file_location)
 
 f = open(file_location, "wb")
 output = UnicodeWriter(f)

@@ -90,14 +90,14 @@ message = 'Message Body !'
 
 attachments = []
  
-print 'Connecting to server...'
+print ('Connecting to server...')
 server = EmailConnection(email, password)
-print 'Preparing the email...'
+print ('Preparing the email...')
 email = Email(from_='"%s" <%s>' % (name, email),
               to='"%s" <%s>' % (to_name, to_email),
               subject=subject, message=message, attachments=attachments)
-print 'Sending...'
+print ('Sending...')
 server.send(email)
-print 'Disconnecting...'
+print ('Disconnecting...')
 server.close()
-print 'Done!'
+print ('Done!')
