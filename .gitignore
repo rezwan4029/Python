@@ -9,6 +9,15 @@
 *.pyc
 
 
+# IDE settings
+.project
+*.pydevproject
+.metadata
+.classpath
+.settings/
+.loadpath
+.idea/
+
 # OS generated files #
 ######################
 .DS_Store
